@@ -9,21 +9,6 @@ from PyQt6.QtCore import Q_ARG
 from PyQt6 import QtCore
 from PyQt6.QtGui import QFont
 
-
-
-
-
-import sys
-import requests
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QTextEdit, QCompleter, QFrame
-from PyQt6.QtGui import QPixmap, QImage
-from PyQt6.QtCore import Qt, QThread, pyqtSignal
-import threading
-from PyQt6.QtCore import Qt, QMetaObject
-from PyQt6.QtCore import Q_ARG
-from PyQt6 import QtCore
-from PyQt6.QtGui import QFont
-
 class PokemonApp(QWidget):
     def __init__(self):
         super().__init__()
@@ -99,7 +84,7 @@ class PokemonApp(QWidget):
 
         # Image layout for below Pokemon image
         below_image_layout = QHBoxLayout()
-        below_pokemon_image = QPixmap("/Users/luca/Code/Pokemon Project/resources/Pokédex_logo.png")
+        below_pokemon_image = QPixmap("/Users/luca/Code/Pokedex-Project/resources/Pokédex_logo.png")
         self.below_pokemon_image_label = QLabel()
         self.below_pokemon_image_label.setPixmap(
             below_pokemon_image.scaled(175, 175, Qt.AspectRatioMode.KeepAspectRatio))
